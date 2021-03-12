@@ -52,4 +52,4 @@ heures = secondes // 3600
 
 secondes = secondes % 3600 % 60
 
-print(" Le resultat est ", heures,"H", minutes,"m", secondes, "secondes") 
+print(" Le resultat est ", heures,"h", minutes,"m", secondes, "secondes") 
