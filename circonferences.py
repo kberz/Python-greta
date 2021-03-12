@@ -1,6 +1,7 @@
 from math import pi
-#Perimettre de l'aire d'un cercle Perimettre = 2 x Pi x R
 
+
+#Perimettre de l'aire d'un cercle Perimettre = 2 x Pi x R
 r = float(input("Inserre le rayon ici: "))
 
 perimettre_du_cercle = r * 2 * pi
@@ -9,6 +10,7 @@ aire_du_cercle = pi * r * r
 
 print("Voici le perimettre: ", perimettre_du_cercle)
 print("Voici l'aire: ", aire_du_cercle)
+
 
 
 
@@ -27,6 +29,9 @@ aire_du_triangle = (dp * (dp -a) * (dp - b) * (dp -c))** 0.5
 print("L'aire du triangle est: ", aire_du_triangle)
 
 
+
+
+
 #Convertion du degrès en fereninght
 degres = float(input("Insère ici les degrès en c°"))
 
@@ -36,13 +41,15 @@ print("La conversion en fanhrenheit: ", convertioncf)
 
 
 
+
+
 #Convertion heures minutes seconde
 secondes = float(input("insère ici les secondes que tu veux calculer en heures: "))
 
-minutes =  secondes / 60 
+minutes =  secondes % 3600 // 60
 
-heures = minutes / 60
+heures = secondes // 3600
 
-jours = heures / 24
+secondes = secondes % 3600 % 60
 
-print(" Le resultat est ", jours, "jours", heures,"H", minutes,"m", secondes, "secondes") 
+print(" Le resultat est ", heures,"H", minutes,"m", secondes, "secondes") 
